@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/resource1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="112dp"
+        android:src="@drawable/resource1"
+        app:layout_constraintBottom_toTopOf="@+id/ore1"
+        app:layout_constraintEnd_toStartOf="@+id/resource2"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/resource3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="120dp"
+        android:src="@drawable/resource3"
+        app:layout_constraintBottom_toTopOf="@+id/ore3"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/resource2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="120dp"
+        android:src="@drawable/resource2"
+        app:layout_constraintBottom_toTopOf="@+id/ore2"
+        app:layout_constraintEnd_toStartOf="@+id/resource3" />
+
+    <ImageView
+        android:id="@+id/ore1"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ore1"
+        app:layout_constraintBottom_toTopOf="@+id/extractor1"
+        app:layout_constraintEnd_toStartOf="@+id/ore2"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ore2"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="72dp"
+        android:src="@drawable/ore2"
+        app:layout_constraintBottom_toTopOf="@+id/extractor2"
+        app:layout_constraintEnd_toStartOf="@+id/ore3" />
+
+    <ImageView
+        android:id="@+id/ore3"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="72dp"
+        android:src="@drawable/ore3"
+        app:layout_constraintBottom_toTopOf="@+id/extractor3"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/extractor1"
+        android:layout_width="56dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="36dp"
+        android:src="@drawable/sprite5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/extractor2"
+        android:layout_width="56dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="36dp"
+        android:src="@drawable/sprite5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/extractor1" />
+
+    <ImageView
+        android:id="@+id/extractor3"
+        android:layout_width="56dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="36dp"
+        android:src="@drawable/sprite5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toEndOf="@+id/extractor2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
